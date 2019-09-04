@@ -213,9 +213,9 @@ label prologue2:
             k "Ну картофель это такой овощ... У вас что, картошки нет?"
             miku "Первый раз вижу!"
             "\"Она или отличный актер или в КНДР все реально плохо...\""
-    show bg c_front
+    scene bg c_front
     "Я закончил пожирать свою порцию биоматериала и пошел в корпус."
-    show bg room_c_5
+    scene bg room_c_5
     "\"Спать хочется пиздец...\""
     "Я вошел в свою комнату и упал на кровать."
     "Но прямо через 5 минут, Оля начала орать" with fade
@@ -225,11 +225,11 @@ label prologue2:
 
     o "С2, СТРОИМСЯ НА ВЕЧЕРКУ!"
     "\"Это еще что?\""
-    show bg c_front
+    scene bg c_front
     "Я опять же вышел на улицу."
-    show bg d_front
+    scene bg d_front
     "Мы пошли в корпус D." 
-    show bg act_room
+    scene bg act_room
     "В корпусе мы вошли в подобие актового зала."
     "Внезапно Оля куда-то ушла"
     show olga
@@ -648,4 +648,6 @@ label BadassRoot:
     sava "Ты не исправился."
     scene black with fade
     "Тут меня начало клонить в сон и я уснул."
+    $ Mi_Ku_root = 0
+    $ Zhenya_root = 0
     jump prologue
